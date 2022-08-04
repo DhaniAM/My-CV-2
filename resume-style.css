@@ -1,7 +1,11 @@
-.color-blue {
+body {
+	color: #565757;
+}
+
+.blue-txt {
 	color: #00CCBF;
 }
 
-span {
+.red-txt, .resume-title {
 	color: #FF5F5D;
 }
