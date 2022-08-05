@@ -3,4 +3,62 @@
 	margin: 0;
 	padding: 0;
 	color: #565757;
+	font-family:'Josefin Sans';
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	background-color: #00CCBF;
+	height: 100px;
+	width: 100vw;
+}
+
+.my-name {
+	height: inherit;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	justify-content: space-between;
+}
+
+.my-name h1{
+	color: #fff;
+	font-size: 32px;;
+}
+
+.my-name h2 {
+	color: #fff;
+	font-size: 24px;
+}
+
+.nav-list {
+	display: flex;
+	list-style-type: none;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.nav-list li {
+	padding: 23px 46px;
+}
+
+.nav-list a {
+	padding: 23px 46px;
+	font-size: 32px;
+	text-decoration: none;
+	border-radius: 85px;
+}
+
+.portfolio-nav a {
+	background-color: #72F2EB;
+}
+
+.nav-list a:hover {
+	background-color: #FF5F5D;
+	color: #fff;
+}
+.nav-list a:active {
+	background-color: #3F7C85;
+	color: #fff;
 }

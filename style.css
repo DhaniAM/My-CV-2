@@ -3,20 +3,22 @@
 	margin: 0;
 	padding: 0;
 	color: #565757;
+	font-family:'Josefin Sans';
 }
 
 nav {
 	display: flex;
 	justify-content: space-between;
 	background-color: #00CCBF;
-	height: 147px;
+	height: 100px;
+	width: 100vw;
 }
 
 .my-name {
 	height: inherit;
 	display: flex;
 	flex-direction: column;
-	padding: 33px;
+	padding: 20px;
 	justify-content: space-between;
 }
 
@@ -27,7 +29,7 @@ nav {
 
 .my-name h2 {
 	color: #fff;
-	font-size: 28px;
+	font-size: 24px;
 }
 
 .nav-list {
@@ -38,15 +40,25 @@ nav {
 }
 
 .nav-list li {
-	padding: 46px;
-	font-size: 32px;
+	padding: 23px 46px;
 }
 
 .nav-list a {
+	padding: 23px 46px;
+	font-size: 32px;
 	text-decoration: none;
+	border-radius: 85px;
 }
 
-.home-nav {
+.home-nav a {
 	background-color: #72F2EB;
-	border-radius: 85px;
+}
+
+.nav-list a:hover {
+	background-color: #FF5F5D;
+	color: #fff;
+}
+.nav-list a:active {
+	background-color: #3F7C85;
+	color: #fff;
 }
