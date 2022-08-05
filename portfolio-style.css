@@ -11,7 +11,7 @@ nav {
 	justify-content: space-between;
 	background-color: #00CCBF;
 	height: 100px;
-	width: 100vw;
+	width: 100%;
 }
 
 .my-name {
@@ -61,4 +61,16 @@ nav {
 .nav-list a:active {
 	background-color: #3F7C85;
 	color: #fff;
+}
+
+/* Footer */
+
+footer {
+	background-color: #72F2EB;
+	text-align: center;
+	line-height: 2;
+	font-size: 24px;
+	position: absolute;
+	width: 100vw;
+	bottom: 0px;
 }
