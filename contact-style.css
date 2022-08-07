@@ -6,6 +6,15 @@
 	font-family:'Josefin Sans';
 }
 
+body {
+	max-height: 100vh;
+	max-width: 100vw;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Nav */
+
 nav {
 	display: flex;
 	justify-content: space-between;
@@ -61,6 +70,40 @@ nav {
 .nav-list a:active {
 	background-color: #3F7C85;
 	color: #fff;
+}
+
+/* Main */
+
+main {
+	display: flex;
+	justify-content: space-around;
+}
+
+.contact-card img{
+	width: 400px;
+}
+
+.my-contact {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 70%;
+}
+
+.contact {
+	min-width: 500px;
+	border: solid 1px black;
+	display: flex;
+	flex-direction: row;
+}
+
+.contact-text {
+	display: flex;
+}
+
+.contact img{
+	width: 100px;
 }
 
 /* Footer */

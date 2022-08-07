@@ -6,12 +6,20 @@
 	font-family:'Josefin Sans';
 }
 
+body {
+	max-height: 100vh;
+	max-width: 100vw;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Nav */
+
 nav {
 	display: flex;
 	justify-content: space-between;
 	background-color: #00CCBF;
 	height: 100px;
-	width: 100%;
 }
 
 /* Left Nav */
@@ -67,14 +75,107 @@ nav {
 	color: #fff;
 }
 
+/* Header */
+
+header {
+	background-color: #3F7C85;
+	height: 80px;
+	line-height: 80px;
+}
+
+#header-text {
+	color: #fff;
+	padding: 0 0 0 20px;
+}
+
+/* Main */
+
+main {
+	height: 100vh;
+	padding: 0 300px;
+	display: flex;
+	align-items: center;
+}
+
+#main-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* Profile picture */
+
+#profile-pic {
+	min-height: 200px;
+	min-width: 200px;
+	background-color: #FF5F5D;
+	border-radius: 50%;
+	padding: 30px;
+}
+
+/* Curve Line */
+
+#line-dot {
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	left: 55px;
+	top: 280px;
+	border: solid 5px #72F2EB;
+	border-color: transparent #72F2EB transparent transparent;
+	border-radius: 0 50% 50% 0;
+	z-index: 0;
+}
+
+/* Dot and Text Explanation */
+
+#text-and-dot {
+
+}
+
+.line {
+	z-index: 10;
+	position: relative;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+
+.circle {
+	display: inline-block;
+	min-height: 20px;
+	min-width: 20px;
+	background-color: #FF5F5D;
+	border-radius: 50%;
+}
+
+.first-line {
+	padding-left: 0px;
+}
+
+.second-line {
+	padding-left: 40px;
+}
+
+.third-line {
+	padding-left: 35px;
+}
+.fourth-line {
+	padding-left: 0px;
+}
+
+.exp {
+	display: inline-block;
+	font-size: 32px;
+	padding: 20px;
+}
+
 /* Footer */
 
 footer {
 	background-color: #72F2EB;
+	height: 50px;
+	line-height: 50px;
 	text-align: center;
-	line-height: 2;
 	font-size: 24px;
-	position: absolute;
-	width: 100%;
-	bottom: 0px;
 }
