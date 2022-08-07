@@ -77,6 +77,8 @@ nav {
 main {
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
+	height: 100vh;
 }
 
 .contact-card img{
@@ -93,13 +95,36 @@ main {
 
 .contact {
 	min-width: 500px;
-	border: solid 1px black;
 	display: flex;
 	flex-direction: row;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 .contact-text {
 	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 20px;
+}
+
+.contact-text p {
+	font-size: 32px;
+	text-decoration: underline;
+}
+
+.contact-text a {
+	font-size: 40px;
+	padding-top: 10px;
+	text-decoration: none;
+}
+
+.contact-text a:hover {
+	color: #FF5F5D;
+}
+
+.contact-text a:active {
+	color:#3F7C85;
 }
 
 .contact img{
