@@ -102,6 +102,18 @@ hr {
 	color: #FF5F5D;
 }
 
+.calculator-info a{
+	text-decoration: none;
+}
+
+.calculator-info a:hover{
+	color: #00CCBF;
+}
+
+.calculator-info a:active{
+	color: #FF5F5D;
+}
+
 .more-info a {
 	color: #FF5F5D;
 	text-decoration: none;
@@ -159,4 +171,72 @@ footer {
 	line-height: 50px;
 	text-align: center;
 	font-size: 24px;
+}
+
+
+/* Calculator */
+
+.calculator {
+	text-align: center;
+	margin: 40px 50px;
+	padding: 0;
+	width: 400px;
+	border: 5px solid black;
+}
+.main-screen {
+	width: 100%;
+	height: 100px;
+	background-color: #000033;
+	color: #fff;
+	text-align: right;
+	font-size: 60px;
+	border: none;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+.temporary-screen {
+	background-color: #f5f5f5;
+	border: 1px solid blue;
+	width: 100%;
+	height: 40px;
+	text-align: right;
+	box-sizing: border-box;
+	padding: 0 20px;
+	font-size: 20px;
+}
+.calculator-keys {
+	width: 100%;
+}
+.row {
+	display: flex;
+}
+button {
+	height: 80px;
+	background-color: black;
+	border: 1px solid blue;
+	font-size: 40px;
+	color: white;
+	width: 25%;
+	outline: none;
+}
+.all-clear {
+	width: 75%;
+}
+.zero-btn {
+	width: 50%;
+}
+.operator, .equal-sign {
+	background-color: #01014b;
+	color: white;
+}
+button:hover {
+	background-color: white;
+	color: black;
+}
+.operator:hover, .equal-sign:hover {
+	background-color: cyan;
+}
+button:active, .operator:active, .equal-sign:active{
+	background-color: orange;
+	color: white;
 }
