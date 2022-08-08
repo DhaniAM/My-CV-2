@@ -20,7 +20,7 @@ nav {
 	justify-content: space-between;
 	background-color: #00CCBF;
 	height: 100px;
-	width: 100%;
+	width: 100vw;
 }
 
 .my-name {
@@ -76,31 +76,41 @@ nav {
 
 main {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	height: 100vh;
-}
-
-.contact-card img{
-	width: 400px;
-}
-
-.my-contact {
-	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	width: 70%;
+}
+
+/* Contact card */
+
+.contact-card{
+	max-width: 400px;
+	margin:20px;
+}
+
+.my-contact-1, .my-contact-2{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	/* border: 1px solid green; */
+	margin: 20px;
 }
 
 .contact {
-	min-width: 500px;
 	display: flex;
+	justify-content: start;
+	align-items: center;
 	flex-direction: row;
 	margin-top: 50px;
 	margin-bottom: 50px;
+	/* border: 1px solid red; */
 }
 
+.contact img {
+	width: 100px;
+	height: auto;
+}
 .contact-text {
 	display: flex;
 	flex-direction: column;
@@ -110,7 +120,7 @@ main {
 
 .contact-text p {
 	font-size: 32px;
-	text-decoration: underline;
+	color: #FF5F5D	;
 }
 
 .contact-text a {
@@ -120,11 +130,11 @@ main {
 }
 
 .contact-text a:hover {
-	color: #FF5F5D;
+	color:#00CCBF;
 }
 
 .contact-text a:active {
-	color:#3F7C85;
+	color: #FF5F5D;
 }
 
 .contact img{
@@ -135,10 +145,9 @@ main {
 
 footer {
 	background-color: #72F2EB;
+	height: 50px;
+	line-height: 50px;
 	text-align: center;
-	line-height: 2;
 	font-size: 24px;
-	position: absolute;
-	width: 100vw;
-	bottom: 0px;
 }
+

@@ -11,6 +11,7 @@ body {
 	max-width: 100vw;
 	display: flex;
 	flex-direction: column;
+	overflow-x: hidden;
 }
 
 nav {
@@ -18,7 +19,7 @@ nav {
 	justify-content: space-between;
 	background-color: #00CCBF;
 	height: 100px;
-	width: 100%;
+	width: 100vw;
 }
 
 .my-name {
@@ -70,14 +71,90 @@ nav {
 	color: #fff;
 }
 
+
+/* Main */
+
+hr {
+	width: 1600px;
+	border-top: 3px solid #00CCBF;
+	margin: auto;
+}
+
+.portfolio {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.portfolio img {
+	max-width: 1000px;
+	padding: 10px;
+	margin: 40px 50px;
+}
+
+.portfolio p {
+	font-size: 32px;
+}
+
+.portfolio span {
+	color: #FF5F5D;
+}
+
+.more-info a {
+	color: #FF5F5D;
+	text-decoration: none;
+	transition: all 0.5s;
+}
+
+.more-info {
+	margin: 50px;
+	text-align: center;
+	font-size: 48px;
+
+}
+
+.more-info a:hover {
+	color: #00CCBF;
+	font-size: 80px;
+}
+
+.more-info a:active {
+	color: #FF5F5D;
+}
+
+/* Design Portfolio */
+
+.design-portfolio {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+	overflow-x: scroll;
+}
+
+.design-portfolio img {
+	max-height: 600px;
+	margin: 30px;
+	padding: 10px;
+}
+
+img {
+	transition: all 0.5s;
+}
+
+img:hover {
+	transform: scale(1.1);
+	transition: all 0.5s;
+	background-color: #72F2EB;
+}
+
+
 /* Footer */
 
 footer {
 	background-color: #72F2EB;
+	height: 50px;
+	line-height: 50px;
 	text-align: center;
-	line-height: 2;
 	font-size: 24px;
-	position: absolute;
-	width: 100vw;
-	bottom: 0px;
 }

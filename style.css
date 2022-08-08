@@ -20,6 +20,7 @@ nav {
 	justify-content: space-between;
 	background-color: #00CCBF;
 	height: 100px;
+	width: 100vw;
 }
 
 /* Left Nav */
@@ -94,7 +95,6 @@ header {
 
 main {
 	height: 100vh;
-	padding: 0 300px;
 	display: flex;
 	align-items: center;
 }
@@ -103,6 +103,7 @@ main {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin: 0 200px;
 }
 
 /* Profile picture */
@@ -119,7 +120,7 @@ main {
 
 /* Curve Line */
 
-#line-dot {
+#curve-line{
 	width: 500px;
 	height: 500px;
 	position: absolute;
@@ -133,9 +134,6 @@ main {
 
 /* Dot and Text Explanation */
 
-#text-and-dot {
-
-}
 
 .line {
 	z-index: 10;
