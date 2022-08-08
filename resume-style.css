@@ -64,10 +64,12 @@ nav {
 	font-size: 32px;
 	text-decoration: none;
 	border-radius: 85px;
+	transition: all 0.5s;
 }
 
 .resume-nav a {
 	background-color: #72F2EB;
+	transition: all 0.5s;
 }
 
 .nav-list a:hover {

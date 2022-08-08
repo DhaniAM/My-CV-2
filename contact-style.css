@@ -61,11 +61,13 @@ nav {
 
 .contact-nav a {
 	background-color: #72F2EB;
+	transition: all 0.5s;
 }
 
 .nav-list a:hover {
 	background-color: #FF5F5D;
 	color: #fff;
+	transition: all 0.5s;
 }
 .nav-list a:active {
 	background-color: #3F7C85;
@@ -127,10 +129,13 @@ main {
 	font-size: 40px;
 	padding-top: 10px;
 	text-decoration: none;
+	transition: all 0.5s;
 }
 
 .contact-text a:hover {
 	color:#00CCBF;
+	font-size: 50px;
+	transition: all 0.5s;
 }
 
 .contact-text a:active {

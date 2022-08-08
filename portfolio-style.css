@@ -60,11 +60,13 @@ nav {
 
 .portfolio-nav a {
 	background-color: #72F2EB;
+	transition: all 0.5s;
 }
 
 .nav-list a:hover {
 	background-color: #FF5F5D;
 	color: #fff;
+	transition: all 0.5s;
 }
 .nav-list a:active {
 	background-color: #3F7C85;

@@ -65,11 +65,13 @@ nav {
 
 .home-nav a {
 	background-color: #72F2EB;
+	transition: all 0.5s;
 }
 
 .nav-list a:hover {
 	background-color: #FF5F5D;
 	color: #fff;
+	transition: all 0.5s;
 }
 .nav-list a:active {
 	background-color: #3F7C85;
@@ -124,7 +126,7 @@ main {
 	width: 500px;
 	height: 500px;
 	position: absolute;
-	left: 155px;
+	left: 55px;
 	top: 280px;
 	border: solid 5px #72F2EB;
 	border-color: transparent #72F2EB transparent transparent;
@@ -133,7 +135,6 @@ main {
 }
 
 /* Dot and Text Explanation */
-
 
 .line {
 	z-index: 10;
