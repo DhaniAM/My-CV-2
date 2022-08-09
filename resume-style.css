@@ -109,7 +109,7 @@ nav {
 
 .content {
 	position: relative;
-	left: 220px;
+	left: 270px;
 	width: 1000px;
 	/* border: 1px solid red; */
 }
@@ -231,6 +231,21 @@ nav {
 
 .progate h4 {
 	margin: 0 200px 50px 0;
+}
+
+/* Language */
+
+.lang {
+	display: flex;
+	align-items: center;
+}
+
+.lang img {
+	margin-right: 30px;
+}
+
+.lang h4 {
+	font-size: 32px;
 }
 
 /* Footer */
