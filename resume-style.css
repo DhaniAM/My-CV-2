@@ -192,7 +192,46 @@ nav {
 	font-size: 40px;
 }
 
+/* Course */
 
+.course img {
+	max-width: 500px;
+	margin-bottom: 20px;
+}
+
+.course h4 {
+	font-size: 32px;
+	margin-bottom: 50px;
+	transition: all 0.5s;
+}
+
+.course a {
+	text-decoration: none;
+}
+
+.course h4:hover, .course a:hover {
+	color: #FF5F5D;
+	transition: all 0.2s;
+	transform: scale(1.05);
+}
+
+.progate-wrap {
+	display: flex;
+	flex-direction: column;
+	height: 700px;
+}
+
+.progate{
+	display: flex;
+	height: 600px;
+	flex-direction: column;
+	flex-wrap: wrap;
+
+}
+
+.progate h4 {
+	margin: 0 200px 50px 0;
+}
 
 /* Footer */
 
