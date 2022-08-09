@@ -111,8 +111,9 @@ nav {
 	position: relative;
 	left: 270px;
 	width: 1000px;
-	/* border: 1px solid red; */
 }
+
+/* Horizontal line */
 
 .short-hr {
 	border-top: 3px solid #FF5F5D;
@@ -212,7 +213,11 @@ nav {
 .course h4:hover, .course a:hover {
 	color: #FF5F5D;
 	transition: all 0.2s;
-	transform: scale(1.05);
+	transform: scale(1.2);
+}
+
+.course a:active {
+	color: #00CCBF;
 }
 
 .progate-wrap {
@@ -240,11 +245,31 @@ nav {
 	align-items: center;
 }
 
+.indonesia {
+	margin-bottom: 30px;
+}
+
 .lang img {
 	margin-right: 30px;
 }
 
 .lang h4 {
+	font-size: 32px;
+}
+
+/* Interest */
+
+.interest {
+	margin-bottom: 50px;
+}
+
+.interest-content {
+	display: flex;
+}
+
+.interest-content h4 {
+	margin-top: 10px;
+	margin-right: 150px;
 	font-size: 32px;
 }
 
