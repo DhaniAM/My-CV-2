@@ -4,6 +4,7 @@
 	padding: 0;
 	color: #565757;
 	font-family:'Josefin Sans';
+	font-weight: 400;
 }
 
 ::-webkit-scrollbar {
@@ -144,7 +145,7 @@ nav {
 	font-size: 64px;
 }
 
-.school, .skill h4, .college {
+.school, .skill h4, .college, .other-skill {
 	font-size: 40px;
 }
 
@@ -158,7 +159,7 @@ nav {
 
 /* Skill */
 
-.soft-skill {
+.soft-skill, .other-skill {
 	display: flex;
 	flex-direction: column;
 	justify-content: start;
@@ -166,8 +167,29 @@ nav {
 	height: 300px;
 }
 
-.soft-skill h4 {
+.soft-skill h4{
 	padding: 0px 50px 50px 0;
+}
+
+.other-skill h4 {
+	padding: 25px;
+}
+
+.hard-skill {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.skill div {
+	padding: 0px 50px 50px 0;
+	text-align: center;
+}
+
+.other-skill-wrap h3{
+	color: #00CCBF;
+	font-size: 40px;
 }
 
 
