@@ -91,6 +91,87 @@ nav {
 	color: #fff;
 }
 
+/* Main */
+
+.resume {
+	display: flex;
+	justify-content: start;
+	margin: 0px 200px 0px 30%;
+}
+
+.resume-title {
+	position: absolute;
+	right: 60%;
+	font-size: 50px;
+	text-align: end;
+}
+
+.content {
+	position: relative;
+	left: 220px;
+	width: 1000px;
+	/* border: 1px solid red; */
+}
+
+.short-hr {
+	border-top: 3px solid #FF5F5D;
+	margin: 30px 0;
+}
+
+.long-hr {
+	border-top: 3px solid #00CCBF;
+	margin: 50px 0;
+}
+
+/* Education */
+
+.education {
+	margin-top: 50px;
+}
+
+/* Education - Achievement */
+.degree {
+	font-size: 40px;
+}
+
+.prodi {
+	text-align: end;
+	color: #3F7C85;
+	font-size: 48px;
+}
+
+.content-title {
+	font-size: 64px;
+}
+
+.school, .skill h4, .college {
+	font-size: 40px;
+}
+
+.school {
+	text-align: end;
+}
+
+.year, .position {
+	font-size: 32px;
+}
+
+/* Skill */
+
+.soft-skill {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	flex-wrap: wrap;
+	height: 300px;
+}
+
+.soft-skill h4 {
+	padding: 0px 50px 50px 0;
+}
+
+
+
 /* Footer */
 
 footer {
