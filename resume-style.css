@@ -122,7 +122,9 @@ nav {
 
 .long-hr {
 	border-top: 3px solid #00CCBF;
-	margin: 50px 0;
+	margin: 50px auto;
+	width: 80%;
+
 }
 
 /* Education */
@@ -139,11 +141,11 @@ nav {
 .prodi {
 	text-align: end;
 	color: #3F7C85;
-	font-size: 48px;
+	font-size: 40px;
 }
 
 .content-title {
-	font-size: 64px;
+	font-size: 56px;
 }
 
 .school, .skill h4, .college, .other-skill {
@@ -152,6 +154,7 @@ nav {
 
 .school {
 	text-align: end;
+	margin: 10px 0;
 }
 
 .year, .position {
