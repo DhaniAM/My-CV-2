@@ -131,7 +131,7 @@ main {
 	border: solid 5px #72F2EB;
 	border-color: transparent #72F2EB transparent transparent;
 	border-radius: 0 50% 50% 0;
-	z-index: 0;
+	z-index: 1;
 }
 
 /* Dot and Text Explanation */
