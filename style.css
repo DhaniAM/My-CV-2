@@ -94,14 +94,15 @@ nav {
 header {
 	background-image: url(img/pc.jpg);
 	background-size: cover;
-	height: 100px;
-	line-height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 #header-text {
 	color: #fff;
-	padding: 0 0 0 20px;
-	text-align: center;
+	padding: 30px;
 }
 
 /* Main */
@@ -235,8 +236,6 @@ footer {
 		background-color: #00CCBF;
 		z-index: 20;
 	}
-
-
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -246,8 +245,10 @@ footer {
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
+@media only screen and (max-width: 600px) {
+	header {
+		font-size: 10px;
+	}
 }
 
 @media only screen and (max-width: 374px) {
