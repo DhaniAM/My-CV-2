@@ -18,10 +18,24 @@ body {
 nav {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	background-color: #00CCBF;
-	height: 100px;
-	width: 100vw;
+	width: 100%;
 }
+
+/* Nav Bar */
+
+.nav-bar {
+	display: none;
+}
+
+.fa {
+	color: #fff;
+	font-size: 32px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
 
 /* Left Nav */
 
@@ -52,15 +66,12 @@ nav {
 	align-items: center;
 }
 
-.nav-list li {
-	padding: 23px 46px;
-}
-
 .nav-list a {
 	padding: 23px 46px;
 	font-size: 32px;
 	text-decoration: none;
 	border-radius: 85px;
+	margin: 0 10px;
 }
 
 .home-nav a {
@@ -180,4 +191,73 @@ footer {
 	line-height: 50px;
 	text-align: center;
 	font-size: 24px;
+}
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 550px) {
+	.my-name h1 {
+		font-size: 20px;
+		margin-bottom: 5px;
+	}
+	.my-name h2 {
+		font-size: 15px;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1350px) {
+}
+
+@media only screen and (max-width: 1000px) {
+	.nav-bar {
+		display: inline-block;
+	}
+	
+	.nav-list {
+		display: none;
+	}
+	
+	.nav-list li {
+		margin: 32px 0;
+	}
+
+	.active {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: 80px;
+		right: 0px;
+		background-color: #00CCBF;
+		z-index: 20;
+	}
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+@media only screen and (max-width: 374px) {
+	.active {
+		top: 100px;
+	}
+}
+
+@media only screen and (max-width: 258px) {
+	.active {
+		top: 120px;
+	}
 }
