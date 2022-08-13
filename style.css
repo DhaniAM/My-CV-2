@@ -117,19 +117,15 @@ main {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 0 200px;
+	padding: 0 10%;
 }
 
 /* Profile picture */
 
-#profile-pic {
-	min-height: 300px;
-	min-width: 300px;
-	background-image: url(img/profile.jpg);
-	background-size: cover;
+#profile-pic img{
 	border-radius: 50%;
-	padding: 30px;
-
+	max-width: 300px;
+	height: auto;
 }
 
 /* Curve Line */
@@ -180,7 +176,7 @@ main {
 
 .exp {
 	display: inline-block;
-	font-size: 32px;
+	font-size: 2vw;
 	padding: 20px;
 }
 
@@ -196,21 +192,9 @@ footer {
 
 
 
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 550px) {
-	.my-name h1 {
-		font-size: 20px;
-		margin-bottom: 5px;
-	}
-	.my-name h2 {
-		font-size: 15px;
-	}
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 1350px) {
 }
+
 
 @media only screen and (max-width: 1000px) {
 	.nav-bar {
@@ -243,11 +227,16 @@ footer {
 
 }
 
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 550px) {
 	header {
 		font-size: 10px;
+	}
+	.my-name h1 {
+		font-size: 20px;
+		margin-bottom: 5px;
+	}
+	.my-name h2 {
+		font-size: 15px;
 	}
 }
 
