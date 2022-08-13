@@ -341,8 +341,11 @@ footer {
 }
 
 
-@media only screen and (min-width: 768px) {
-
+@media only screen and (max-width: 768px) {
+	/* footer */
+	footer {
+		font-size: 15px;
+	}
 }
 
 
@@ -363,6 +366,11 @@ footer {
 @media only screen and (max-width: 374px) {
 	.active {
 		top: 100px;
+	}
+
+	/* footer */
+	footer {
+		font-size: 12px;
 	}
 }
 
