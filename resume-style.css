@@ -115,7 +115,6 @@ nav {
 .resume {
 	display: flex;
 	justify-content: start;
-	margin: 0px 200px 0px 30%;
 }
 
 .resume-title {
@@ -123,12 +122,13 @@ nav {
 	right: 60%;
 	font-size: 50px;
 	text-align: end;
+	white-space: nowrap;
 }
 
 .content {
 	position: relative;
-	left: 270px;
-	width: 1000px;
+	left: 40%;
+	max-width: 800px;
 }
 
 /* Horizontal line */
@@ -152,22 +152,17 @@ nav {
 }
 
 /* Education - Achievement */
-.degree {
+.degree, .school, .skill h4, .college, .other-skill, .prodi {
 	font-size: 40px;
 }
 
 .prodi {
 	text-align: end;
 	color: #3F7C85;
-	font-size: 40px;
 }
 
 .content-title {
 	font-size: 56px;
-}
-
-.school, .skill h4, .college, .other-skill {
-	font-size: 40px;
 }
 
 .school {
@@ -211,7 +206,7 @@ nav {
 
 .other-skill-wrap h3{
 	color: #00CCBF;
-	font-size: 40px;
+	font-size: 32px;
 }
 
 /* Course */
@@ -244,12 +239,12 @@ nav {
 .progate-wrap {
 	display: flex;
 	flex-direction: column;
-	height: 700px;
+	height: 800px;
 }
 
 .progate{
 	display: flex;
-	height: 600px;
+	height: 700px;
 	flex-direction: column;
 	flex-wrap: wrap;
 
@@ -286,12 +281,14 @@ nav {
 
 .interest-content {
 	display: flex;
+	align-items: center;
 }
 
 .interest-content h4 {
 	margin-top: 10px;
 	margin-right: 150px;
 	font-size: 32px;
+	white-space: nowrap;
 }
 
 /* Footer */
@@ -308,11 +305,31 @@ footer {
 /* Responsive */
 
 @media only screen and (max-width: 1350px) {
+	.resume {
+		justify-content: center;	
+	}
+
+	.resume-title {
+		position: relative;
+		right: 0;
+		left: 0;
+		text-align: end;
+	}
+
+	.content {
+		left: 0;
+	}
+
+	.progate h4 {
+		margin: 0 100px 50px 0;
+	}
+
 
 }
 
 
 @media only screen and (max-width: 1000px) {
+	/* Nav */
 	.nav-bar {
 		display: inline-block;
 	}
@@ -337,11 +354,81 @@ footer {
 		z-index: 20;
 	}
 
+	/* Main */
+	.resume-title {
+		font-size: 32px;
+	}
+
+	.degree, .prodi, .school, .skill h4, .college, .other-skill {
+		font-size: 24px;
+	}
+
+	.content-title {
+		font-size: 32px;
+	}
+
+	.year, .position {
+		font-size: 20px;
+	}
+
+	/* Interest */
+	.interest-content {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.interest-content h4 {
+		margin: 0 100px 0 10px;
+	}
+
+
+	/* Course */
+	.course h4 {
+		font-size: 24px;
+	}
+
 
 }
 
 
 @media only screen and (max-width: 768px) {
+	.short-hr {
+		width: 60%;
+		margin: 20px auto;
+	}
+
+	.long-hr {
+		margin: 48px 0;
+		width: 100%;
+	}
+
+	/* Main */
+	.resume {
+		flex-direction: column;
+	}
+
+	.resume-title {
+		text-align: center;
+		padding-bottom: 24px;
+	}
+
+	/* Language */
+	.lang h4 {
+		font-size: 24px;
+	}
+
+	/* Interest */
+	.interest-content {
+		/* flex-direction: row; */
+		align-items: center;
+	}
+	.interest-content h4 {
+		font-size: 24px;
+	}
+
+	.interest-content h4 {
+		margin: 0px 20px 10px;
+	}
+
 	/* footer */
 	footer {
 		font-size: 15px;
@@ -360,12 +447,99 @@ footer {
 	.my-name h2 {
 		font-size: 15px;
 	}
+
+	/* Main */
+
+	.resume-title {
+		font-size: 28	px;
+	}
+
+	.degree, .prodi, .school, .skill h4, .college, .other-skill {
+		font-size: 20px;
+	}
+
+	.content-title {
+		font-size: 24px;
+	}
+
+	.year, .position {
+		font-size: 16px;
+	}
+
+	/* Skill */
+	.soft-skill, .other-skill {
+		flex-wrap: nowrap;
+		height: auto;
+		text-align: center;
+	}
+
+	.soft-skill h4 {
+		padding: 0 0 20px 0;
+	}
+
+	.other-skill-wrap h3 {
+		padding-left: 20px;
+		font-size: 24px;
+	}
+
+	/* Course */
+	.course {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.course img {
+		width: 90vw;
+	}
+
+	.course h4 {
+		font-size: 20px;
+		text-align: center;
+	}
+
+	.progate-wrap {
+		height: auto;
+	}
+
+	.progate {
+		height: auto;
+	}
+
+	.progate h4 {
+		margin: 0 0 24px 0;
+	}
+
+	.sololearn {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+
+	/* languages */
+	.lang {
+		flex-direction: column;
+	}
+
+	.lang h4 {
+		text-align: center;
+	}
 }
 
 
 @media only screen and (max-width: 374px) {
 	.active {
 		top: 100px;
+	}
+
+	.resume-title {
+		white-space: normal;
+	}
+
+	/* Skill */
+	.skill div {
+		padding: 0px 0px 10px 0px;
 	}
 
 	/* footer */
