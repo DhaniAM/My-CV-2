@@ -230,6 +230,7 @@ nav {
 	color: #FF5F5D;
 	transition: all 0.2s;
 	transform: scale(1.2);
+	transform-origin: 100px;
 }
 
 .course a:active {
