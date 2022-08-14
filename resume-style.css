@@ -398,8 +398,8 @@ footer {
 	}
 
 	.long-hr {
-		margin: 48px 0;
-		width: 100%;
+		margin: 48px auto;
+		width: 95%;
 	}
 
 	/* Main */
