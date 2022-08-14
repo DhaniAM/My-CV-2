@@ -107,7 +107,7 @@ nav {
 hr {
 	width: 80%;
 	border-top: 3px solid #00CCBF;
-	margin: auto;
+	margin: 40px auto;
 }
 
 .portfolio {
@@ -119,7 +119,6 @@ hr {
 .portfolio img {
 	max-width: 1000px;
 	padding: 10px;
-	margin: 40px 50px;
 }
 
 .portfolio p {
@@ -187,7 +186,7 @@ img {
 img:hover {
 	transform: scale(1.1);
 	transition: all 0.5s;
-	background-color: #72F2EB;
+	background-color: #FF5F5D;
 }
 
 
@@ -203,6 +202,10 @@ footer {
 
 
 /* Calculator */
+
+.calc-pic {
+	display: none;
+}
 
 .calculator {
 	text-align: center;
@@ -273,7 +276,9 @@ button:active, .operator:active, .equal-sign:active{
 /* Responsive */
 
 @media only screen and (max-width: 1350px) {
-
+	.portfolio {
+		flex-wrap: wrap;
+	}
 }
 
 @media only screen and (max-width: 1000px) {
@@ -301,7 +306,22 @@ button:active, .operator:active, .equal-sign:active{
 		z-index: 20;
 	}
 
+	/* Main */
+	.portfolio {
+		flex-direction: column;
+	}
+	
+	.portfolio img {
+		width: 650px;
+	}
 
+	.design-portfolio img {
+		height: 400px;
+	}
+
+	.design-portfolio img {
+		margin: 10px;
+	}
 }
 
 @media only screen and (max-width: 768px) {
@@ -322,6 +342,33 @@ button:active, .operator:active, .equal-sign:active{
 	.my-name h2 {
 		font-size: 15px;
 	}
+
+	/* main */
+	.portfolio img {
+		width: 300px;
+	}
+
+	.portfolio p {
+		font-size: 16px;
+	}
+
+	.calculator {
+		display: none;
+	}
+
+	.calc-pic {
+		display: block;
+	}
+
+	.more-info {
+		font-size: 24px;
+	}
+
+	.more-info a:hover {
+		color: #00CCBF;
+		font-size: 32px;
+	}
+	
 }
 
 @media only screen and (max-width: 374px) {

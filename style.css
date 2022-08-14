@@ -285,6 +285,9 @@ footer {
 }
 
 @media only screen and (max-width: 550px) {
+	.active {
+		top: 80px
+	}
 	/* Header */
 	header {
 		font-size: 10px;
