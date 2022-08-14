@@ -36,6 +36,8 @@ nav {
 	font-size: 32px;
 	margin-right: 20px;
 	cursor: pointer;
+	z-index: 30;
+	position: relative;
 }
 
 
@@ -246,10 +248,39 @@ footer {
 		align-items: center;
 		position: absolute;
 		top: 80px;
-		right: 0px;
+		height: 300px;
+		width: 100vw;
 		background-color: #00CCBF;
 		z-index: 20;
 	}
+
+	.active a {
+		padding: 20px 40%;
+		background-color: transparent;
+		/* border: 1px solid red; */
+	}
+
+	.active a:hover {
+		background-color: transparent;
+	}
+
+	.active li {
+		width: 100%;
+		text-align: center;
+		padding: 20px 0;
+		margin: 0px;
+	}
+
+	.active li:hover {
+		background-color: #FF5F5D;
+		color: white;
+	}
+
+	.home-nav {
+		transition: all 0.5s;
+		background-color: #72F2EB;
+	}
+
 	
 	/* Profile pic */
 	#profile-pic img {
@@ -285,13 +316,21 @@ footer {
 }
 
 @media only screen and (max-width: 550px) {
-	.active {
-		top: 80px
+	.active a {
+		font-size: 20px;
+		padding: 20px 40%;
 	}
+
+	.active {
+		height: 250px;
+		top: 80px;
+	}
+
 	/* Header */
 	header {
 		font-size: 10px;
 	}
+
 	.my-name h1 {
 		font-size: 20px;
 		margin-bottom: 5px;
@@ -312,7 +351,11 @@ footer {
 
 @media only screen and (max-width: 374px) {
 	.active {
-		top: 100px;
+		top: 80px;
+	}
+
+	.active a {
+		padding: 20px 30%;
 	}
 	
 	/* Profile pic */
@@ -346,6 +389,6 @@ footer {
 
 @media only screen and (max-width: 258px) {
 	.active {
-		top: 120px;
+		top: 100px;
 	}
 }

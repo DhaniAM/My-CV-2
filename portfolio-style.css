@@ -60,12 +60,14 @@ nav {
 
 .my-name h1{
 	color: #fff;
-	font-size: 32px;;
+	font-size: 32px;
+	font-weight: bold;
 }
 
 .my-name h2 {
 	color: #fff;
 	font-size: 24px;
+	font-weight: bold;
 }
 
 /* Right Nav */
@@ -282,6 +284,7 @@ button:active, .operator:active, .equal-sign:active{
 }
 
 @media only screen and (max-width: 1000px) {
+	/* Nav */
 	.nav-bar {
 		display: inline-block;
 	}
@@ -293,7 +296,7 @@ button:active, .operator:active, .equal-sign:active{
 	.nav-list li {
 		margin: 32px 0;
 	}
-
+	
 	.active {
 		display: flex;
 		flex-direction: column;
@@ -301,9 +304,37 @@ button:active, .operator:active, .equal-sign:active{
 		align-items: center;
 		position: absolute;
 		top: 80px;
-		right: 0px;
+		height: 300px;
+		width: 100vw;
 		background-color: #00CCBF;
 		z-index: 20;
+	}
+
+	.active a {
+		padding: 20px 40%;
+		background-color: transparent;
+		/* border: 1px solid red; */
+	}
+
+	.active a:hover {
+		background-color: transparent;
+	}
+
+	.active li {
+		width: 100%;
+		text-align: center;
+		padding: 20px 0;
+		margin: 0px;
+	}
+
+	.active li:hover {
+		background-color: #FF5F5D;
+		color: white;
+	}
+
+	.portfolio-nav {
+		transition: all 0.5s;
+		background-color: #72F2EB;
 	}
 
 	/* Main */
@@ -332,6 +363,16 @@ button:active, .operator:active, .equal-sign:active{
 }
 
 @media only screen and (max-width: 550px) {
+	.active a {
+		font-size: 20px;
+		padding: 20px 40%;
+	}
+
+	.active {
+		height: 250px;
+		top: 80px;
+	}
+
 	header {
 		font-size: 10px;
 	}
@@ -373,7 +414,11 @@ button:active, .operator:active, .equal-sign:active{
 
 @media only screen and (max-width: 374px) {
 	.active {
-		top: 100px;
+		top: 80px;
+	}
+
+	.active a {
+		padding: 20px 30%;
 	}
 
 	/* footer */
@@ -384,6 +429,6 @@ button:active, .operator:active, .equal-sign:active{
 
 @media only screen and (max-width: 258px) {
 	.active {
-		top: 120px;
+		top: 100px;
 	}
 }
