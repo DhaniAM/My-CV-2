@@ -1,8 +1,17 @@
+:root {
+	--color1: #565757;
+	--color2: #3F7C85;
+	--color3: #00CCBF;
+	--color4: #72F2EB;
+	--color5: #FF5F5D;
+	--color6: #f89593;
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	color: #565757;
+	color: var(--color1);
 	font-family:'Josefin Sans', sans-serif;
 }
 
@@ -21,7 +30,7 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: #00CCBF;
+	background-color: var(--color3);
 	width: 100%;
 }
 
@@ -79,17 +88,17 @@ nav {
 }
 
 .home-nav a {
-	background-color: #72F2EB;
+	background-color: var(--color4);
 	transition: all 0.5s;
 }
 
 .nav-list a:hover {
-	background-color: #FF5F5D;
+	background-color: var(--color5);
 	color: #fff;
 	transition: all 0.5s;
 }
 .nav-list a:active {
-	background-color: #3F7C85;
+	background-color: var(--color2);
 	color: #fff;
 }
 
@@ -144,22 +153,6 @@ main {
 /* Curve Line */
 
 #curve-line img{
-	/* width: 500px;
-	height: 500px;
-	position: absolute;
-	left:50px;
-	border: solid 5px #72F2EB;
-	border-color: transparent #72F2EB transparent transparent;
-	border-radius: 0 50% 50% 0;
-	z-index: 1; */
-
-	/* background-image: url(img/Line-dot.png);
-	background-size: cover;
-	height: 450px;
-	width: 250px;
-	position: relative;
-	left: -50px;
-	border: 1px solid red; */
 	height: 400px;
 	position: relative;
 	left: -50px;
@@ -173,14 +166,6 @@ main {
 	justify-content: start;
 	align-items: center;
 }
-
-/* .circle {
-	display: inline-block;
-	min-height: 20px;
-	min-width: 20px;
-	background-color: #FF5F5D;
-	border-radius: 50%;
-} */
 
 .exp {
 	font-size: 32px;
@@ -204,12 +189,10 @@ main {
 	left: -130px;
 }
 
-
-
 /* Footer */
 
 footer {
-	background-color: #72F2EB;
+	background-color: var(--color4);
 	height: 50px;
 	line-height: 50px;
 	text-align: center;
@@ -250,14 +233,13 @@ footer {
 		top: 80px;
 		height: 300px;
 		width: 100vw;
-		background-color: #00CCBF;
+		background-color: var(--color3);
 		z-index: 20;
 	}
 
 	.active a {
 		padding: 20px 40%;
 		background-color: transparent;
-		/* border: 1px solid red; */
 	}
 
 	.active a:hover {
@@ -272,13 +254,13 @@ footer {
 	}
 
 	.active li:hover {
-		background-color: #FF5F5D;
+		background-color: var(--color5);
 		color: white;
 	}
 
 	.home-nav {
 		transition: all 0.5s;
-		background-color: #72F2EB;
+		background-color: var(--color4);
 	}
 
 	

@@ -1,8 +1,17 @@
+:root {
+	--color1: #565757;
+	--color2: #3F7C85;
+	--color3: #00CCBF;
+	--color4: #72F2EB;
+	--color5: #FF5F5D;
+	--color6: #f89593;
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	color: #565757;
+	color: var(--color1);
 	font-family:'Josefin Sans', sans-serif;
 	font-weight: 400;
 }
@@ -11,10 +20,10 @@
     width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background-color: #00CCBF;
+    background-color: var(--color3);
 }
 ::-webkit-scrollbar-thumb {
-	background: #f89593;
+	background: var(--color6);
 }
 
 body {
@@ -26,11 +35,11 @@ body {
 }
 
 .blue-txt {
-	color: #00CCBF;
+	color: var(--color3);
 }
 
 .red-txt, .resume-title {
-	color: #FF5F5D;
+	color: var(--color5);
 }
 
 /* Nav */
@@ -39,7 +48,7 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: #00CCBF;
+	background-color: var(--color3);
 	width: 100%;
 }
 
@@ -97,17 +106,17 @@ nav {
 }
 
 .resume-nav a {
-	background-color: #72F2EB;
+	background-color: var(--color4);
 	transition: all 0.5s;
 }
 
 .nav-list a:hover {
-	background-color: #FF5F5D;
+	background-color: var(--color5);
 	color: #fff;
 	transition: all 0.5s;
 }
 .nav-list a:active {
-	background-color: #3F7C85;
+	background-color: var(--color2);
 	color: #fff;
 }
 
@@ -137,12 +146,12 @@ nav {
 /* Horizontal line */
 
 .short-hr {
-	border-top: 3px solid #FF5F5D;
+	border-top: 3px solid var(--color6);
 	margin: 30px 0;
 }
 
 .long-hr {
-	border-top: 3px solid #00CCBF;
+	border-top: 3px solid var(--color3);
 	margin: 50px auto;
 	width: 80%;
 
@@ -161,7 +170,7 @@ nav {
 
 .prodi {
 	text-align: end;
-	color: #3F7C85;
+	color: var(--color2);
 }
 
 .content-title {
@@ -208,7 +217,7 @@ nav {
 }
 
 .other-skill-wrap h3{
-	color: #00CCBF;
+	color: var(--color3);
 	font-size: 32px;
 }
 
@@ -230,7 +239,7 @@ nav {
 }
 
 .course h4:hover, .course a:hover {
-	color: #FF5F5D;
+	color: var(--color5);
 	transition: all 0.2s;
 	transform: scale(1.2);
 	transform-origin: 100px;
@@ -298,7 +307,7 @@ nav {
 /* Footer */
 
 footer {
-	background-color: #72F2EB;
+	background-color: var(--color4);
 	height: 50px;
 	line-height: 50px;
 	text-align: center;
@@ -355,14 +364,13 @@ footer {
 		top: 80px;
 		height: 300px;
 		width: 100vw;
-		background-color: #00CCBF;
+		background-color: var(--color3);
 		z-index: 20;
 	}
 
 	.active a {
 		padding: 20px 40%;
 		background-color: transparent;
-		/* border: 1px solid red; */
 	}
 
 	.active a:hover {
@@ -377,13 +385,13 @@ footer {
 	}
 
 	.active li:hover {
-		background-color: #FF5F5D;
+		background-color: var(--color5);
 		color: white;
 	}
 
 	.resume-nav {
 		transition: all 0.5s;
-		background-color: #72F2EB;
+		background-color: var(--color4);
 	}
 
 	/* Main */

@@ -1,8 +1,17 @@
+:root {
+	--color1: #565757;
+	--color2: #3F7C85;
+	--color3: #00CCBF;
+	--color4: #72F2EB;
+	--color5: #FF5F5D;
+	--color6: #f89593;
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	color: #565757;
+	color: var(--color1);
 	font-family:'Josefin Sans', sans-serif;
 }
 
@@ -18,10 +27,10 @@ body {
     width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background-color: #00CCBF;
+    background-color: var(--color3);
 }
 ::-webkit-scrollbar-thumb {
-	background: #f89593;
+	background: var(--color6);
 }
 
 /* Nav */
@@ -30,7 +39,7 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: #00CCBF;
+	background-color: var(--color3);
 	width: 100%;
 }
 
@@ -88,17 +97,17 @@ nav {
 }
 
 .portfolio-nav a {
-	background-color: #72F2EB;
+	background-color: var(--color4);
 	transition: all 0.5s;
 }
 
 .nav-list a:hover {
-	background-color: #FF5F5D;
+	background-color: var(--color5);
 	color: #fff;
 	transition: all 0.5s;
 }
 .nav-list a:active {
-	background-color: #3F7C85;
+	background-color: var(--color2);
 	color: #fff;
 }
 
@@ -108,8 +117,12 @@ nav {
 
 hr {
 	width: 80%;
-	border-top: 3px solid #00CCBF;
+	border-top: 3px solid var(--color3);
 	margin: 40px auto;
+}
+
+.portfolio-section-title {
+	background-color: var(--color6);
 }
 
 .portfolio {
@@ -128,7 +141,7 @@ hr {
 }
 
 .portfolio span {
-	color: #FF5F5D;
+	color: var(--color5);
 }
 
 .calculator-info a{
@@ -136,15 +149,15 @@ hr {
 }
 
 .calculator-info a:hover{
-	color: #00CCBF;
+	color: var(--color3);
 }
 
 .calculator-info a:active{
-	color: #FF5F5D;
+	color: var(--color5);
 }
 
 .more-info a {
-	color: #FF5F5D;
+	color: var(--color5);
 	text-decoration: none;
 	transition: all 0.5s;
 }
@@ -157,12 +170,12 @@ hr {
 }
 
 .more-info a:hover {
-	color: #00CCBF;
+	color: var(--color3);
 	font-size: 80px;
 }
 
 .more-info a:active {
-	color: #FF5F5D;
+	color: var(--color5);
 }
 
 /* Design Portfolio */
@@ -188,14 +201,14 @@ img {
 img:hover {
 	transform: scale(1.1);
 	transition: all 0.5s;
-	background-color: #FF5F5D;
+	background-color: var(--color5);
 }
 
 
 /* Footer */
 
 footer {
-	background-color: #72F2EB;
+	background-color: var(--color4);
 	height: 50px;
 	line-height: 50px;
 	text-align: center;
@@ -306,7 +319,7 @@ button:active, .operator:active, .equal-sign:active{
 		top: 80px;
 		height: 300px;
 		width: 100vw;
-		background-color: #00CCBF;
+		background-color: var(--color3);
 		z-index: 20;
 	}
 
@@ -328,13 +341,13 @@ button:active, .operator:active, .equal-sign:active{
 	}
 
 	.active li:hover {
-		background-color: #FF5F5D;
+		background-color: var(--color5);
 		color: white;
 	}
 
 	.portfolio-nav {
 		transition: all 0.5s;
-		background-color: #72F2EB;
+		background-color: var(--color4);
 	}
 
 	/* Main */
@@ -406,7 +419,7 @@ button:active, .operator:active, .equal-sign:active{
 	}
 
 	.more-info a:hover {
-		color: #00CCBF;
+		color: var(--color3);
 		font-size: 32px;
 	}
 	

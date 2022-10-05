@@ -1,3 +1,12 @@
+:root {
+	--color1: #565757;
+	--color2: #3F7C85;
+	--color3: #00CCBF;
+	--color4: #72F2EB;
+	--color5: #FF5F5D;
+	--color6: #f89593;
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -20,7 +29,7 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: #00CCBF;
+	background-color: var(--color3);
 	width: 100%;
 }
 
@@ -78,17 +87,17 @@ nav {
 }
 
 .contact-nav a {
-	background-color: #72F2EB;
+	background-color: var(--color4);
 	transition: all 0.5s;
 }
 
 .nav-list a:hover {
-	background-color: #FF5F5D;
+	background-color: var(--color5);
 	color: #fff;
 	transition: all 0.5s;
 }
 .nav-list a:active {
-	background-color: #3F7C85;
+	background-color: var(--color2);
 	color: #fff;
 }
 
@@ -108,7 +117,6 @@ main {
 	flex-wrap: wrap;
 	padding: 0px 30px;
 	height: auto;
-	/* background-color: #d9f8f6; */
 }
 
 /* Contact card */
@@ -158,7 +166,7 @@ main {
 
 .contact-text p {
 	font-size: 32px;
-	color: #FF5F5D	;
+	color: var(--color5)	;
 }
 
 .contact-text a {
@@ -169,14 +177,14 @@ main {
 }
 
 .contact-text a:hover {
-	color:#00CCBF;
+	color:var(--color3);
 	transform-origin: 0;
 	transform: scale(1.3, 1.3);
 	transition: all 0.2s;
 }
 
 .contact-text a:active {
-	color: #FF5F5D;
+	color: var(--color5);
 }
 
 .contact img{
@@ -186,7 +194,7 @@ main {
 /* Footer */
 
 footer {
-	background-color: #72F2EB;
+	background-color: var(--color4);
 	height: 50px;
 	line-height: 50px;
 	text-align: center;
@@ -233,14 +241,13 @@ footer {
 		top: 80px;
 		height: 300px;
 		width: 100vw;
-		background-color: #00CCBF;
+		background-color: var(--color3);
 		z-index: 20;
 	}
 
 	.active a {
 		padding: 20px 40%;
 		background-color: transparent;
-		/* border: 1px solid red; */
 	}
 
 	.active a:hover {
@@ -255,13 +262,13 @@ footer {
 	}
 
 	.active li:hover {
-		background-color: #FF5F5D;
+		background-color: var(--color5);
 		color: white;
 	}
 
 	.contact-nav {
 		transition: all 0.5s;
-		background-color: #72F2EB;
+		background-color: var(--color4);
 	}
 
 	/* contact */
