@@ -187,14 +187,14 @@ hr {
 .design-wrap {
 	display: flex;
 	flex-direction: row;
-	justify-content: start;
+	justify-content: center;
 	align-items: center;
-	overflow-x: scroll;
+	flex-wrap: wrap;
 }
 
 .design-wrap img {
-	max-height: 600px;
-	margin: 30px;
+	max-width: 400px;
+	margin: 20px;
 	padding: 10px;
 }
 
