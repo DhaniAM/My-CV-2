@@ -30,7 +30,7 @@ body {
     background-color: var(--color3);
 }
 ::-webkit-scrollbar-thumb {
-	background: var(--color6);
+	background: var(--color5);
 }
 
 /* Nav */
@@ -123,6 +123,10 @@ hr {
 
 .portfolio-section-title {
 	background-color: var(--color6);
+	color: white;
+	text-align: center;
+	font-size: 50px;
+	padding: 24px;
 }
 
 .portfolio {
@@ -180,7 +184,7 @@ hr {
 
 /* Design Portfolio */
 
-.design-portfolio {
+.design-wrap {
 	display: flex;
 	flex-direction: row;
 	justify-content: start;
@@ -188,7 +192,7 @@ hr {
 	overflow-x: scroll;
 }
 
-.design-portfolio img {
+.design-wrap img {
 	max-height: 600px;
 	margin: 30px;
 	padding: 10px;
@@ -359,11 +363,11 @@ button:active, .operator:active, .equal-sign:active{
 		width: 650px;
 	}
 
-	.design-portfolio img {
+	.design-wrap img {
 		height: 400px;
 	}
 
-	.design-portfolio img {
+	.design-wrap img {
 		margin: 10px;
 	}
 }

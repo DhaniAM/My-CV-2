@@ -23,7 +23,7 @@
     background-color: var(--color3);
 }
 ::-webkit-scrollbar-thumb {
-	background: var(--color6);
+	background: var(--color5);
 }
 
 body {
