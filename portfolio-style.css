@@ -202,10 +202,41 @@ img {
 	transition: all 0.5s;
 }
 
+/* img border while hover is actually from padding, not border */
 img:hover {
 	transform: scale(1.1);
 	transition: all 0.5s;
 	background-color: var(--color5);
+}
+
+/* UI Portfolio */
+
+.ui-portfolio-wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.ui-portfolio p {
+	font-size: 32px;
+	margin-bottom: 50px;
+}
+
+.ui-portfolio a {
+	text-decoration: none;
+
+}
+
+.ui-portfolio img {
+	max-width: 600px;
+	padding: 10px;
+	margin: 20px;
+}
+
+.ui-portfolio span {
+	color: var(--color5);
 }
 
 
