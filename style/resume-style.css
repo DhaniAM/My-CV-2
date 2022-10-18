@@ -157,6 +157,39 @@ nav {
 
 }
 
+/* Resume Nav */
+.resume-content-nav {
+	background-color: var(--color4);
+	position: sticky;
+	top: 0px;
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+}
+
+.resume-content-nav ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	list-style-type: none;
+	height: 85px;
+	text-overflow: clip;
+}
+
+.resume-content-nav a {
+	font-size: 25px;
+	padding: 30px 50px;
+	text-decoration: none;
+	transition: all 0.2s;
+
+}
+.resume-content-nav a:hover {
+	background-color: var(--color6);
+	color: white;
+}
+
+
 /* Education */
 
 .education {
