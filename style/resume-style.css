@@ -120,6 +120,9 @@ nav {
 	color: #fff;
 }
 
+.certificates-nav {
+	color: var(--color5);
+}
 
 /* Main */
 
@@ -519,6 +522,12 @@ footer {
 		padding-bottom: 24px;
 	}
 
+	/* Course */
+	.course-wrapper a {
+		text-decoration: underline;
+		text-decoration-color: var(--color6);
+	}
+
 	/* Language */
 	.lang h4 {
 		font-size: 24px;
@@ -585,6 +594,21 @@ footer {
 	}
 
 	/* Skill */
+	.hard-skill img {
+		width: 70px;
+		margin: 10px auto;
+	}
+
+	.hard-skill-content {
+		margin: 5px;
+		display: flex;
+		/* border: 1px solid red; */
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+
 	.soft-skill, .other-skill {
 		flex-wrap: nowrap;
 		height: auto;
