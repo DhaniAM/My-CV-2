@@ -210,6 +210,11 @@ nav {
 
 /* Education */
 
+#education-section {
+	padding-top: 100px;
+	margin-top: -100px;
+}
+
 .education {
 	margin-top: 50px;
 }
@@ -237,7 +242,16 @@ nav {
 	font-size: 32px;
 }
 
+#experience-section {
+	padding-top: 100px;
+	margin-top: -100px;
+}
+
 /* Skill */
+#skill-section {
+	padding-top: 100px;
+	margin-top: -100px;
+}
 
 .soft-skill, .other-skill {
 	display: flex;
@@ -273,6 +287,10 @@ nav {
 }
 
 /* Course */
+#certificate-section {
+	padding-top: 100px;
+	margin-top: -100px;
+}
 
 .course img {
 	max-width: 500px;
