@@ -13,6 +13,7 @@
 	padding: 0;
 	color: #565757;
 	font-family:'Josefin Sans', sans-serif;
+	scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -293,6 +294,11 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+	.contact-text a {
+		text-decoration: underline;
+		text-decoration-color: var(--color4);
+	}
+
 	/* footer */
 	footer {
 		font-size: 15px;

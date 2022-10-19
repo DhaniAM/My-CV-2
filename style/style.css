@@ -13,6 +13,7 @@
 	padding: 0;
 	color: var(--color1);
 	font-family:'Josefin Sans', sans-serif;
+	scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
