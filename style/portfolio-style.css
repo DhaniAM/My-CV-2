@@ -552,11 +552,6 @@ button:active, .operator:active, .equal-sign:active{
 	.ui-portfolio img {
 		width: 300px;
 	}
-
-	.locality-flowchart img {
-		/* width: 500px; */
-	}
-	
 }
 
 @media only screen and (max-width: 374px) {
