@@ -52,6 +52,7 @@ nav {
 	align-items: center;
 	background-color: var(--color3);
 	width: 100%;
+	z-index: 10;
 }
 
 /* Nav Bar */
@@ -130,6 +131,7 @@ nav {
 
 .content-wrap {
 	padding: 0 15px;
+	z-index: 0;
 }
 
 .resume {
@@ -171,7 +173,7 @@ nav {
 	background-color: var(--color4);
 	position: sticky;
 	top: 0px;
-	z-index: 10;
+	z-index: 5;
 	display: flex;
 	justify-content: center;
 	align-items: center;

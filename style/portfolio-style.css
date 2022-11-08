@@ -42,6 +42,7 @@ nav {
 	align-items: center;
 	background-color: var(--color3);
 	width: 100%;
+	z-index: 20;
 }
 
 /* Nav Bar */
@@ -177,6 +178,7 @@ hr {
 .app-portfolio {
 	padding-top: 100px;
 	margin-top: -100px;
+	z-index: 0;
 }
 
 .portfolio {
