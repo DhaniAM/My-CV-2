@@ -1,9 +1,9 @@
 :root {
 	--color1: #565757;
-	--color2: #3F7C85;
-	--color3: #00CCBF;
-	--color4: #72F2EB;
-	--color5: #FF5F5D;
+	--color2: #3f7c85;
+	--color3: #00ccbf;
+	--color4: #72f2eb;
+	--color5: #ff5f5d;
 	--color6: #f89593;
 }
 
@@ -12,7 +12,7 @@
 	margin: 0;
 	padding: 0;
 	color: var(--color1);
-	font-family:'Josefin Sans', sans-serif;
+	font-family: "Josefin Sans", sans-serif;
 	scroll-behavior: smooth;
 }
 
@@ -25,10 +25,10 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+	width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background-color: var(--color3);
+	background-color: var(--color3);
 }
 ::-webkit-scrollbar-thumb {
 	background: var(--color5);
@@ -58,7 +58,6 @@ nav {
 	cursor: pointer;
 }
 
-
 /* Left Nav */
 
 .my-name {
@@ -69,7 +68,7 @@ nav {
 	justify-content: space-between;
 }
 
-.my-name h1{
+.my-name h1 {
 	color: #fff;
 	font-size: 32px;
 	font-weight: bold;
@@ -113,11 +112,15 @@ nav {
 	color: #fff;
 }
 
-
-
 /* Main */
 
 /* Portfolio nav */
+video {
+	margin: 20px;
+	border: 1px solid var(--color5);
+	width: 300px;
+}
+
 .portfolio-content-nav {
 	background-color: var(--color4);
 	position: sticky;
@@ -200,15 +203,15 @@ hr {
 	color: var(--color5);
 }
 
-.calculator-info a{
+.calculator-info a {
 	text-decoration: none;
 }
 
-.calculator-info a:hover{
+.calculator-info a:hover {
 	color: var(--color3);
 }
 
-.calculator-info a:active{
+.calculator-info a:active {
 	color: var(--color5);
 }
 
@@ -222,7 +225,6 @@ hr {
 	margin: 50px;
 	text-align: center;
 	font-size: 48px;
-
 }
 
 .more-info a:hover {
@@ -288,7 +290,6 @@ img:hover {
 
 .ui-portfolio a {
 	text-decoration: none;
-
 }
 
 .ui-portfolio img {
@@ -301,7 +302,6 @@ img:hover {
 	color: var(--color5);
 }
 
-
 /* Footer */
 
 footer {
@@ -311,7 +311,6 @@ footer {
 	text-align: center;
 	font-size: 24px;
 }
-
 
 /* Calculator */
 
@@ -368,7 +367,8 @@ button {
 .zero-btn {
 	width: 50%;
 }
-.operator, .equal-sign {
+.operator,
+.equal-sign {
 	background-color: #01014b;
 	color: white;
 }
@@ -376,14 +376,16 @@ button:hover {
 	background-color: white;
 	color: black;
 }
-.operator:hover, .equal-sign:hover {
+.operator:hover,
+.equal-sign:hover {
 	background-color: cyan;
 }
-button:active, .operator:active, .equal-sign:active{
+button:active,
+.operator:active,
+.equal-sign:active {
 	background-color: orange;
 	color: white;
 }
-
 
 /* Responsive */
 
@@ -398,15 +400,15 @@ button:active, .operator:active, .equal-sign:active{
 	.nav-bar {
 		display: inline-block;
 	}
-	
+
 	.nav-list {
 		display: none;
 	}
-	
+
 	.nav-list li {
 		margin: 32px 0;
 	}
-	
+
 	.active {
 		display: flex;
 		flex-direction: column;
@@ -452,7 +454,7 @@ button:active, .operator:active, .equal-sign:active{
 	.portfolio {
 		flex-direction: column;
 	}
-	
+
 	.portfolio img {
 		width: 650px;
 	}
@@ -473,7 +475,6 @@ button:active, .operator:active, .equal-sign:active{
 	.locality-flowchart img {
 		width: 500px;
 	}
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -563,6 +564,12 @@ button:active, .operator:active, .equal-sign:active{
 
 	.active a {
 		padding: 20px 30%;
+	}
+
+	video {
+		margin: 10px 0;
+		border: 1px solid var(--color5);
+		width: 200px;
 	}
 
 	/* footer */
