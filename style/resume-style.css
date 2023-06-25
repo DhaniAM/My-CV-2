@@ -1,9 +1,9 @@
 :root {
 	--color1: #565757;
-	--color2: #3F7C85;
-	--color3: #00CCBF;
-	--color4: #72F2EB;
-	--color5: #FF5F5D;
+	--color2: #3f7c85;
+	--color3: #00ccbf;
+	--color4: #72f2eb;
+	--color5: #ff5f5d;
 	--color6: #f89593;
 }
 
@@ -12,17 +12,16 @@
 	margin: 0;
 	padding: 0;
 	color: var(--color1);
-	font-family:'Josefin Sans', sans-serif;
+	font-family: "Josefin Sans", sans-serif;
 	font-weight: 400;
 	scroll-behavior: smooth;
 }
 
-
 ::-webkit-scrollbar {
-    width: 10px;
+	width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background-color: var(--color3);
+	background-color: var(--color3);
 }
 ::-webkit-scrollbar-thumb {
 	background: var(--color5);
@@ -40,7 +39,8 @@ body {
 	color: var(--color3);
 }
 
-.red-txt, .resume-title {
+.red-txt,
+.resume-title {
 	color: var(--color5);
 }
 
@@ -68,7 +68,6 @@ nav {
 	cursor: pointer;
 }
 
-
 /* Left Nav */
 
 .my-name {
@@ -79,9 +78,9 @@ nav {
 	justify-content: space-between;
 }
 
-.my-name h1{
+.my-name h1 {
 	color: #fff;
-	font-size: 32px;;
+	font-size: 32px;
 	font-weight: bold;
 }
 
@@ -89,6 +88,7 @@ nav {
 	color: #fff;
 	font-size: 24px;
 	font-weight: bold;
+	font-style: italic;
 }
 
 /* Right Nav */
@@ -165,7 +165,6 @@ nav {
 	border-top: 3px solid var(--color3);
 	margin: 50px auto;
 	width: 80%;
-
 }
 
 /* Resume Nav Contents*/
@@ -180,7 +179,6 @@ nav {
 }
 
 .resume-content-nav ul {
-	background-color: var(--color4);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -202,13 +200,15 @@ nav {
 	margin: 0 10px;
 	text-decoration: none;
 	transition: all 0.2s;
-
 }
 .resume-content-nav a:hover {
 	background-color: var(--color6);
 	color: white;
 }
 
+.resume-content-nav a:active {
+	background-color: var(--color3);
+}
 
 /* Education */
 
@@ -222,7 +222,12 @@ nav {
 }
 
 /* Education - Achievement */
-.degree, .school, .skill h4, .college, .other-skill, .prodi {
+.degree,
+.school,
+.skill h4,
+.college,
+.other-skill,
+.prodi {
 	font-size: 40px;
 }
 
@@ -240,7 +245,8 @@ nav {
 	margin: 10px 0;
 }
 
-.year, .position {
+.year,
+.position {
 	font-size: 32px;
 }
 
@@ -255,7 +261,8 @@ nav {
 	margin-top: -100px;
 }
 
-.soft-skill, .other-skill {
+.soft-skill,
+.other-skill {
 	display: flex;
 	flex-direction: column;
 	justify-content: start;
@@ -263,7 +270,7 @@ nav {
 	height: 300px;
 }
 
-.soft-skill h4{
+.soft-skill h4 {
 	padding: 0px 50px 50px 0;
 }
 
@@ -283,7 +290,7 @@ nav {
 	text-align: center;
 }
 
-.other-skill-wrap h3{
+.other-skill-wrap h3 {
 	color: var(--color3);
 	font-size: 32px;
 }
@@ -309,7 +316,8 @@ nav {
 	text-decoration: none;
 }
 
-.course h4:hover, .course a:hover {
+.course h4:hover,
+.course a:hover {
 	color: var(--color5);
 	transition: all 0.2s;
 	transform: scale(1.2);
@@ -317,7 +325,7 @@ nav {
 }
 
 .course a:active {
-	color: #00CCBF;
+	color: #00ccbf;
 }
 
 .progate-wrap {
@@ -326,12 +334,11 @@ nav {
 	height: 800px;
 }
 
-.progate{
+.progate {
 	display: flex;
 	height: 700px;
 	flex-direction: column;
 	flex-wrap: wrap;
-
 }
 
 .progate h4 {
@@ -385,12 +392,11 @@ footer {
 	font-size: 24px;
 }
 
-
 /* Responsive */
 
 @media only screen and (max-width: 1350px) {
 	.resume {
-		justify-content: center;	
+		justify-content: center;
 	}
 
 	.resume-title {
@@ -407,25 +413,22 @@ footer {
 	.progate h4 {
 		margin: 0 100px 50px 0;
 	}
-
-
 }
-
 
 @media only screen and (max-width: 1000px) {
 	/* Nav */
 	.nav-bar {
 		display: inline-block;
 	}
-	
+
 	.nav-list {
 		display: none;
 	}
-	
+
 	.nav-list li {
 		margin: 32px 0;
 	}
-	
+
 	.active {
 		display: flex;
 		flex-direction: column;
@@ -469,7 +472,7 @@ footer {
 	.resume-content-nav ul {
 		justify-content: space-between;
 	}
-	
+
 	.resume-content-nav a {
 		padding: 30px 20px;
 		margin: 0;
@@ -479,7 +482,12 @@ footer {
 		font-size: 32px;
 	}
 
-	.degree, .prodi, .school, .skill h4, .college, .other-skill {
+	.degree,
+	.prodi,
+	.school,
+	.skill h4,
+	.college,
+	.other-skill {
 		font-size: 24px;
 	}
 
@@ -487,7 +495,8 @@ footer {
 		font-size: 32px;
 	}
 
-	.year, .position {
+	.year,
+	.position {
 		font-size: 20px;
 	}
 
@@ -504,10 +513,7 @@ footer {
 	.course h4 {
 		font-size: 24px;
 	}
-
-
 }
-
 
 @media only screen and (max-width: 768px) {
 	.short-hr {
@@ -529,7 +535,7 @@ footer {
 	.resume-content-nav li {
 		line-height: 50px;
 	}
-	
+
 	.resume-content-nav a {
 		font-size: 15px;
 		padding: 20px 10px;
@@ -574,7 +580,6 @@ footer {
 	}
 }
 
-
 @media only screen and (max-width: 550px) {
 	.active a {
 		font-size: 20px;
@@ -600,10 +605,15 @@ footer {
 	/* Main */
 
 	.resume-title {
-		font-size: 28	px;
+		font-size: 28 px;
 	}
 
-	.degree, .prodi, .school, .skill h4, .college, .other-skill {
+	.degree,
+	.prodi,
+	.school,
+	.skill h4,
+	.college,
+	.other-skill {
 		font-size: 20px;
 	}
 
@@ -611,7 +621,8 @@ footer {
 		font-size: 24px;
 	}
 
-	.year, .position {
+	.year,
+	.position {
 		font-size: 16px;
 	}
 
@@ -631,7 +642,8 @@ footer {
 		flex-wrap: nowrap;
 	}
 
-	.soft-skill, .other-skill {
+	.soft-skill,
+	.other-skill {
 		flex-wrap: nowrap;
 		height: auto;
 		text-align: center;
@@ -680,7 +692,6 @@ footer {
 		align-items: center;
 	}
 
-
 	/* languages */
 	.lang {
 		flex-direction: column;
@@ -691,7 +702,6 @@ footer {
 	}
 }
 
-
 @media only screen and (max-width: 374px) {
 	.active {
 		top: 80px;
@@ -700,7 +710,6 @@ footer {
 	.active a {
 		padding: 20px 30%;
 	}
-	
 
 	.resume-title {
 		white-space: normal;

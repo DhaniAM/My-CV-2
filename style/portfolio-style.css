@@ -78,6 +78,7 @@ nav {
 	color: #fff;
 	font-size: 24px;
 	font-weight: bold;
+	font-style: italic;
 }
 
 /* Right Nav */
@@ -132,7 +133,6 @@ video {
 }
 
 .portfolio-content-nav ul {
-	background-color: var(--color4);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -159,6 +159,10 @@ video {
 .portfolio-content-nav a:hover {
 	background-color: var(--color6);
 	color: white;
+}
+
+.portfolio-content-nav a:active {
+	background-color: var(--color3);
 }
 
 /* line */
@@ -215,16 +219,23 @@ hr {
 	color: var(--color5);
 }
 
-.more-info a {
-	color: var(--color5);
-	text-decoration: none;
-	transition: all 0.5s;
-}
-
 .more-info {
 	margin: 50px;
 	text-align: center;
 	font-size: 48px;
+	line-height: 1.4;
+}
+
+.more-info a {
+	color: var(--color5);
+	text-decoration: none;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.more-info a:link {
+	color: var(--color5);
+	text-decoration: none;
 }
 
 .more-info a:hover {
@@ -234,6 +245,10 @@ hr {
 
 .more-info a:active {
 	color: var(--color5);
+}
+
+.more-info a:visited {
+	text-decoration: none;
 }
 
 /* Design Portfolio */
